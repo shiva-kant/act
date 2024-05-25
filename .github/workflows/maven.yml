@@ -2,9 +2,9 @@ name: Java CII
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -25,5 +25,5 @@ jobs:
       run: mvn -B package  --file HelloCICDIMAGE/pom.xml
     - name: Build with Maven
       run: mvn clean install
-    - name: Run tests
+    - name: Run test
       run: mvn clean package
