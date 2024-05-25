@@ -22,7 +22,7 @@ jobs:
         java-version: '11'
         distribution: 'temurin' # Use 'temurin' or your preferred distribution
     - name: Build with Maven
-      run: mvn -B package --file ./HelloCICDIMAGE/pom.xml
+      run: mvn -B package --file HelloCICDIMAGE/pom.xml
     - name: Build with Maven
       run: mvn clean install
     - name: Run test
