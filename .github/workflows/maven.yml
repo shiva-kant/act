@@ -1,4 +1,4 @@
-name: Java CII
+name: Java CII Docker
 
 on:
   push:
